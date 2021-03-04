@@ -1,12 +1,12 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Entities;
-using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
+using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Europorte.Microservices.EventSourcing.Common.Messaging
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Messaging
 {
     public class EventConsumerFactory : IEventConsumerFactory
     {

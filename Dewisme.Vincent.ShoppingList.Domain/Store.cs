@@ -1,6 +1,6 @@
 ﻿using Dewisme.Vincent.ShoppingList.Domain.Events;
-using Europorte.Microservices.EventSourcing.Common.Entities;
-using Europorte.Microservices.EventSourcing.Common.Events;
+using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
+using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using System;
 using System.Diagnostics.CodeAnalysis;
 

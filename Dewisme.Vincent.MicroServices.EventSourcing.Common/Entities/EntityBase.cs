@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Europorte.Microservices.EventSourcing.Common.Entities
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Entities
 {
     public abstract class EntityBase<TKey> : IEntity<TKey>
     {

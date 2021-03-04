@@ -3,7 +3,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.Reflection;
 
-namespace Europorte.Microservices.EventSourcing.Common
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common
 {
     /// <summary>
     /// https://www.mking.net/blog/working-with-private-setters-in-json-net

@@ -1,4 +1,4 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Reflection;
 
-namespace Europorte.Microservices.EventSourcing.Common.Entities
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Entities
 {
     public abstract class AggregateRootBase<TAggregateRoot, TKey> : EntityBase<TKey>, IAggregateRoot<TKey>
         where TAggregateRoot : class, IAggregateRoot<TKey>
@@ -58,7 +58,7 @@ namespace Europorte.Microservices.EventSourcing.Common.Entities
 
         #endregion
 
-        private readonly ConcurrentQueue<IDomainEvent<TKey>> events = new ConcurrentQueue<IDomainEvent<TKey>>();
+        private readonly ConcurrentQueue<IDomainEvent<TKey>> events = new();
         protected AggregateRootBase() { }
 
         protected AggregateRootBase(TKey id) : base(id)

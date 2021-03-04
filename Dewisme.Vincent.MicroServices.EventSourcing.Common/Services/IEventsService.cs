@@ -1,7 +1,7 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Entities;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
 using System.Threading.Tasks;
 
-namespace Europorte.Microservices.EventSourcing.Common.Services
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Services
 {
     public interface IEventsService<TAggregateRoot, TKey>
         where TAggregateRoot : class, IAggregateRoot<TKey>

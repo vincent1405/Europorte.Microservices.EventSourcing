@@ -1,7 +1,7 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using System.Collections.Generic;
 
-namespace Europorte.Microservices.EventSourcing.Common.Entities
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Entities
 {
     /// <summary>
     /// Contract to be implemented by any aggregate root.

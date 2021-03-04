@@ -1,4 +1,4 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Services;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Services;
 using MediatR;
 using System;
 using System.Threading;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dewisme.Vincent.ShoppingList.Domain.Commands
 {
-    public class RenameStoreGroup:INotification
+    public class RenameStoreGroup : INotification
     {
         public RenameStoreGroup(StoreGroup storeGroup, string storeGroupNewName)
         {
@@ -22,7 +22,7 @@ namespace Dewisme.Vincent.ShoppingList.Domain.Commands
     {
         private readonly IEventsService<StoreGroup, Guid> storeGroupEventsService;
 
-        public RenameStoreGroupHandler(IEventsService<StoreGroup,Guid> storeGroupEventsService)
+        public RenameStoreGroupHandler(IEventsService<StoreGroup, Guid> storeGroupEventsService)
         {
             this.storeGroupEventsService = storeGroupEventsService;
         }
@@ -30,9 +30,9 @@ namespace Dewisme.Vincent.ShoppingList.Domain.Commands
         public async Task Handle(RenameStoreGroup command, CancellationToken cancellationToken)
         {
             var foundStoreGroup = await storeGroupEventsService.RehydrateAsync(command.StoreGroupId);
-            if(foundStoreGroup == null)
+            if (foundStoreGroup == null)
             {
-                throw new ArgumentOutOfRangeException($"Invalid store group id.");
+                throw new ArgumentOutOfRangeException(paramName: nameof(command.StoreGroupId), message: $"Invalid store group id.");
             }
 
             foundStoreGroup.Rename(command.StoreGroupNewName);

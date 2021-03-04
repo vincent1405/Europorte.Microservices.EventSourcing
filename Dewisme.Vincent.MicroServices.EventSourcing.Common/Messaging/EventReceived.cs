@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Europorte.Microservices.EventSourcing.Common
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common
 {
     public class EventReceived<EventType> : INotification
     {

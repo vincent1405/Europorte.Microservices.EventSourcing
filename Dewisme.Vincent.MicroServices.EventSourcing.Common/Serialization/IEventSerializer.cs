@@ -1,6 +1,6 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 
-namespace Europorte.Microservices.EventSourcing.Common.Serialization
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Serialization
 {
     public interface IEventSerializer
     {

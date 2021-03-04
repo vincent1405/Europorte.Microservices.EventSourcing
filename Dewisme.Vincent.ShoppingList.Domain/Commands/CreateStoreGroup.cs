@@ -1,4 +1,4 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Services;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Services;
 using MediatR;
 using System;
 using System.Threading;

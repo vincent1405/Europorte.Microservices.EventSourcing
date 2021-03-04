@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Europorte.Microservices.EventSourcing.Common\Europorte.Microservices.EventSourcing.Common.csproj" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Services\" />
+    <ProjectReference Include="..\Dewisme.Vincent.MicroServices.EventSourcing.Common\Dewisme.Vincent.MicroServices.EventSourcing.Common.csproj" />
   </ItemGroup>
 
 </Project>

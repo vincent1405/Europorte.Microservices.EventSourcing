@@ -1,7 +1,7 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Entities;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
 using System;
 
-namespace Europorte.Microservices.EventSourcing.Common.Events
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Events
 {
     public class DomainEventBase<TAggregateRoot, TKey> : IDomainEvent<TKey>
         where TAggregateRoot : class, IAggregateRoot<TKey>

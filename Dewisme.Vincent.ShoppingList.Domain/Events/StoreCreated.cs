@@ -1,4 +1,4 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using System;
 
 namespace Dewisme.Vincent.ShoppingList.Domain.Events

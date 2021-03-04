@@ -1,11 +1,11 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Entities;
-using Europorte.Microservices.EventSourcing.Common.Messaging;
-using Europorte.Microservices.EventSourcing.Common.Repositories;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
+using Dewisme.Vincent.Microservices.EventSourcing.Common.Messaging;
+using Dewisme.Vincent.Microservices.EventSourcing.Common.Repositories;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Europorte.Microservices.EventSourcing.Common.Services
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Services
 {
     public class EventsService<TAggregateRoot, TKey> : IEventsService<TAggregateRoot, TKey>
         where TAggregateRoot : class, IAggregateRoot<TKey>

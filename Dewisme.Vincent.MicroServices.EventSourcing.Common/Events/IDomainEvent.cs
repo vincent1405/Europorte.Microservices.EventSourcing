@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Europorte.Microservices.EventSourcing.Common.Events
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Events
 {
     public interface IDomainEvent<out TKey>
     {

@@ -1,4 +1,4 @@
-﻿namespace Europorte.Microservices.EventSourcing.Common
+﻿namespace Dewisme.Vincent.Microservices.EventSourcing.Common
 {
     public static class EventReceivedFactory
     {

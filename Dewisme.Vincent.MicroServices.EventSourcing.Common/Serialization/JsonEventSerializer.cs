@@ -1,15 +1,15 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Events;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Events;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
 
-namespace Europorte.Microservices.EventSourcing.Common.Serialization
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Serialization
 {
     public class JsonEventSerializer : IEventSerializer
     {
-        private static readonly JsonSerializerSettings JsonSerializerSettings = new JsonSerializerSettings
+        private static readonly JsonSerializerSettings JsonSerializerSettings = new()
         {
             ConstructorHandling = ConstructorHandling.AllowNonPublicDefaultConstructor,
             ContractResolver = new PrivateSetterContractResolver()

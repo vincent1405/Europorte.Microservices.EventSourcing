@@ -1,6 +1,6 @@
-﻿using Europorte.Microservices.EventSourcing.Common.Entities;
+﻿using Dewisme.Vincent.Microservices.EventSourcing.Common.Entities;
 
-namespace Europorte.Microservices.EventSourcing.Common.Messaging
+namespace Dewisme.Vincent.Microservices.EventSourcing.Common.Messaging
 {
     public interface IEventConsumerFactory
     {
